@@ -4,14 +4,14 @@ from setuptools import setup
 
 
 def readme():
-    with open('README.md') as f:
+    with open('README.md',encoding="utf8") as f:
         return f.read()
 
-
 setup(name='mirrorball',
-      version='0.1.5',
+      version='0.2.0',
       description='A python package to use neural networks to combine the content of an image with the style of another image',
-      url='https://github.com/ParishaKB/MirrorballPackage/blob/main/mirrorball/mirrorball.py',
+      long_description= readme(),
+      url='https://github.com/ParishaKB/mirrorball',
       author='Parisha Bhatia, Soham Sharangpani, Shreyansh Bardia, Ujwal Shah,Aniket Modi,Gaurav Ankalagi',
       license='MIT',
       include_package_data=True,
